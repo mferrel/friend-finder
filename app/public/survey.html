@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FriendFinder</title>
+    <title>Friend Finder</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-zF4BRsG/fLiTGfR9QL82DrilZxrwgY/+du4p/c7J72zZj+FLYq4zY00RylP9ZjiT" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
         integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
         crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -18,10 +19,10 @@
         <h2>Survey Questions</h2>
         <hr>
         <h3><strong>About You</strong></h3>
-        <p>Please answer all questions to the best of your ability.</p>
+        <p>Answer all questions.</p>
         <h4>Name (Required)</h4>
         <input type="text" name="" id="name" class="form-control" required>
-        <h4>Link to photo (Required)</h4>
+        <h4>Link to Photo Image (Required)</h4>
         <input type="text" name="" id="photo" class="form-control" required>
         <hr>
         <section id="friend-form">
@@ -203,18 +204,20 @@
                 </div>
             </div>
         </div>
-        <button type="submit" class="btn btn-danger btn-lg btn-block" id="submit">Submit</button>
+        <button type="button" class="btn btn-danger btn-lg btn-block" id="submit">Submit</button>
         <br>
         <a href="/">
             <button type="button" class="btn btn-primary">
-                Return Home
+                Homepage
             </button>
         </a>
         <hr>
         <footer class="footer">
             <p>
-                <a href="/api/friends">API Friends List</a> | <a href="https://github.com/a-ashbeck/FriendFinder">GitHub
-                    Repo</a>
+                <a href="/api/friends">API Friends List</a> | <a href="https://github.com/mferrel/friend-finder">GitHub Repo</a>
             </p>
         </footer>
     </div>
+    <script src="/app.js"></script>
+    </body>
+    </html>
