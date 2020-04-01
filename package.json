@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/mferrel/friend-finder/issues"
   },
-  "homepage": "https://github.com/mferrel/friend-finder#readme"
+  "homepage": "https://github.com/mferrel/friend-finder#readme",
+  "engines": {
+    "node": "12.16.1"
+  }
 }
