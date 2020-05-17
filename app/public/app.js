@@ -5,19 +5,26 @@ $("#submit").on("click", function(){
         "name":$("#name").val(),
         "photo":$("#photo").val(),
         "scores":[
-         $("#item1").val(),
-         $("#item2").val() ,
-         $("#item3").val(),
-         $("#item4").val(),
-         $("#item5").val(),
-         $("#item6").val(),
-         $("#item7").val(),
-         $("#item8").val(),
-         $("#item9").val(),
-         $("#item10").val()
-          ]
+         $("#question1").val(),
+         $("#question2").val() ,
+         $("#question3").val(),
+         $("#question4").val(),
+         $("#question5").val(),
+         $("#question6").val(),
+         $("#question7").val(),
+         $("#question8").val(),
+         $("#question9").val(),
+         $("#question10").val()
+        ]
     }
-    $.post("/api/friends", userData).then(function(data){
 
+    console.log(userData);
+    $.post("/api/friends", userData).then(function(data){
+        console.log(data);
+
+
+        $("#results-modal").modal("show");
+            $("#match-name").html(data.name);
+            $("#match-img").attr("src", data.photo);
     })
 })
